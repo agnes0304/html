@@ -14,7 +14,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .bg-video__content {
@@ -110,7 +110,16 @@ section > p {
   border: 0;
   background-color: transparent;
   color: white;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hashtag:hover, 
+.hashtag:active {
+    background-color: white;
+    color: rgb(61, 164, 215);
+    font-weight: 700;
+    opacity: 0.8;
 }
 
 #bg-img {
@@ -119,10 +128,20 @@ section > p {
 
 #okr {
   display: flex;
+  margin: 12rem 0;
 }
 
-#top {
+#top a {
   position: fixed;
-  bottom: 0.3rem;
-  right: 0.3rem;
+  text-decoration: none;
+  color:rgb(61, 164, 215) ;
+  font-weight: 800;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+
+#top a:hover,
+#top a:active {
+    color: #bbb;
 }
