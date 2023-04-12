@@ -9,36 +9,44 @@
 </head>
 
 <body>
-    <!-- <div id="login-page">
-        <h1>Login page</h1>
-        <div>
-            <input type="text" placeholder="아이디">
-            <input type="password" placeholder="비밀번호">
-            <input type="checkbox">로그인 상태 유지
-            <button value="submit">로그인</button>
-        </div>
-    </div> -->
-
-    <section id="profile" style="padding: 50;">
-        <!-- <h1>Profile</h1> -->
-        <h2>안녕하세요, 최지우입니다.</h2>
-        <p style="font-weight: 300;">My code may sink, but at least I can swim.<br>#수영 #스쿠버다이빙 #보라색 #역사 #반려식물맷똘</p>
-        <img src="notion-avatar.png" width="300">
-        <img src="scuba.JPG" width="400">
-        
-        <h3>목표</h3>
-        <ul>
-            <li>올해 안에 직전 연봉보다 높은 조건으로 프론트엔드 개발 커리어 시작</li>
-            <li>3년 내에 비동기 리모트 가능한 회사 입사</li>
-            <li>토이 프로젝트 완성 및 실제 상용화 해보기</li>
-        </ul>
-        <h3>다짐</h3>
-        <ul>
-            <li>하루 1시간 필요한 라이브러리 공부</li>
-            <li>최소 주1회 블로그 포스팅</li>
-            <li>아침 수영 주 4회로 늘리기</li>
-        </ul>
-    </section>
+    <header id="header">
+        <div>Header</div>
+    </header>
+    <main>
+        <img id="profile-img" src="notion-avatar.png">
+        <section id="bio">
+            <h2>안녕하세요, 최지우입니다.</h2>
+            <p>My code may sink, but at least I can swim.</p>
+            <button class="hashtag">#수영</button>
+            <button class="hashtag">#스쿠버다이빙</button>
+            <button class="hashtag">#보라색</button>
+            <button class="hashtag">#역사</button>
+            <button class="hashtag">#반려식물맷똘</button>
+        </section>
+        <img id="bg-img" src="scuba.JPG">
+        <section id="objective">
+            <h3>목표</h3>
+            <ul>
+                <li>올해 안에 직전 연봉보다 높은 조건으로 프론트엔드 개발 커리어 시작</li>
+                <li>3년 내에 비동기 리모트 가능한 회사 입사</li>
+                <li>토이 프로젝트 완성 및 실제 상용화 해보기</li>
+            </ul>
+        </section>
+        <section id="initiative">
+            <h3>다짐</h3>
+            <ul>
+                <li>하루 1시간 필요한 라이브러리 공부</li>
+                <li>최소 주1회 블로그 포스팅</li>
+                <li>아침 수영 주 4회로 늘리기</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div>Footer</div>
+    </footer>
+    <div id="top">
+        <a href="#header">TOP</a>
+    </div>
 </body>
 
 </html>
