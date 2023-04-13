@@ -145,3 +145,34 @@ section > p {
 #top a:active {
     color: #bbb;
 }
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hashtag-content div {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top:30%;
+  left: 15%;
+  width: 40%;
+  height: 30%;
+  background-color: rgba(8, 50, 122, 0.6);
+  color: white;
+  padding: 1rem;
+}
+
+.inner-hashtag {
+  border: 0;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
