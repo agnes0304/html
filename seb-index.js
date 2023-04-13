@@ -18,6 +18,7 @@ swimBtn.addEventListener("click", function(){
 
 scubaBtn.addEventListener("click", function(){
     scubaContent.style.display = "flex";
+    scubaContent.style.padding = "1rem";
     backdrop.style.display = "block";
 });
 
@@ -33,6 +34,7 @@ historyBtn.addEventListener("click", function(){
 
 plantBtn.addEventListener("click", function(){
     plantContent.style.display = "flex";
+    plantContent.style.padding = "1rem";
     backdrop.style.display = "block";
 });
 
