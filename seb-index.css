@@ -185,7 +185,7 @@ section > p {
   z-index: 10;
   top:30%;
   left: 15%;
-  width: 40%;
+  width: 50%;
   height: 40%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
@@ -193,7 +193,7 @@ section > p {
 }
 
 .hashtag-contents img {
-  width: 200px;
+  width: 350px;
 }
 
 .hashtag-content .hashtag-content-without-img {
