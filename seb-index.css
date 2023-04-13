@@ -126,6 +126,10 @@ section > p {
   width: 100%;
 }
 
+#arrow-down {
+  padding-top: 5rem;
+}
+
 #okr {
   display: flex;
   margin: 10rem 0;
@@ -133,16 +137,20 @@ section > p {
 
 #okr li {
   list-style: none;
-  padding: 0px;
+  padding-right: 42px;
 }
 
 .okr-content {
   display: flex;
-  width: 25rem;
-  margin: 3rem;
+  width: 32rem;
+  /* margin: 1rem; */
   text-align: center;
   flex-direction: column;
   align-items: center;
+}
+
+.okr-content h3 {
+  padding-left: 0 42px;
 }
 
 #top a {
@@ -179,7 +187,7 @@ section > p {
   left: 15%;
   width: 40%;
   height: 40%;
-  background-color: rgba(8, 50, 122, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 3rem 1rem 1rem 1rem;
 }
@@ -202,4 +210,16 @@ section > p {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
+}
+
+#footer {
+  display: flex;
+  padding: 2rem;
+  color: white;
+  background-color: rgb(0, 47, 87);
+}
+
+#footer img {
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }
