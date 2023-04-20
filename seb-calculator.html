@@ -6,36 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="seb-calculator.css">
-    <title>계산기 목업만들기</title>
+    <title>계산기</title>
 </head>
 
 <body>
-    <div class="cal-container">
-        <section class="display">
-            <input type="text" placeholder="0" disabled>
+    <div class="container">
+        <section class="dp">
+            <p class="dp-value">0</p>
         </section>
-        <section class="btn">
-            <div class="num">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>0</button>
-                <button id="hundred">00</button>
-                <button id="float">.</button>
-            </div>
-            <div class="op">
-                <button id="ac">ac</button>
-                <button>*</button>
-                <button>/</button>
-                <button>+</button>
-                <button>-</button>
-                <button id="equal">=</button>
+        <section class="btn-container">
+            <div class="btn">
+                <button class="btn-num">1</button>
+                <button class="btn-num">2</button>
+                <button class="btn-num">3</button>
+                <button class="btn-op" id="ac">AC</button>
+                <button class="btn-num">4</button>
+                <button class="btn-num">5</button>
+                <button class="btn-num">6</button>
+                <button class="btn-op">+</button>
+                <button class="btn-op">-</button>
+                <button class="btn-num">7</button>
+                <button class="btn-num">8</button>
+                <button class="btn-num">9</button>
+                <button class="btn-op">X</button>
+                <button class="btn-op">/</button>
+                <button class="btn-num" id="zero">0</button>
+                <button class="btn-num" id="float">.</button>
+                <button class="btn-op" id="equal">ENTER</button>
             </div>
         </section>
     </div>
