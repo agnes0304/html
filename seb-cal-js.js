@@ -9,6 +9,15 @@ const calculatedResult = document.querySelector('.calculator__result'); // calcu
 function calculate(n1, operator, n2) {
   let result = 0;
   // TODO : n1과 n2를 operator에 따라 계산하는 함수를 만드세요.
+  if (operator === '+'){
+    result = Number(n1) + Number(n2);
+  } else if (operator === '-'){
+    result = Number(n1) - Number(n2);
+  } else if (operator === '/'){
+    result = Number(n1) / Number(n2);
+  } else if (operator === '*'){
+    result = Number(n1) * Number(n2);
+  }
   // ex) 입력값이 n1 : '1', operator : '+', n2 : '2' 인 경우, 3이 리턴됩니다.
   return String(result);
 }
@@ -21,16 +30,26 @@ buttons.addEventListener('click', function (event) {
   const buttonContent = target.textContent; // 클릭된 HTML 엘리먼트의 텍스트 정보를 가져옵니다.
   // ! 위 코드(Line 19 - 21)는 수정하지 마세요.
 
+  let firstNum = 0;
+  let secondNum = 0;
+
   if (target.matches('button')) {
     // TODO : 계산기가 작동할 수 있도록 아래 코드를 수정하세요. 작성되어 있는 조건문과 console.log를 활용하시면 쉽게 문제를 풀 수 있습니다.
     // 클릭된 HTML 엘리먼트가 button이면
     if (action === 'number') {
-      // 그리고 버튼의 클레스가 number이면
-      // 아래 코드가 작동됩니다.
-      console.log('숫자 ' + buttonContent + ' 버튼');
+      if (firstOperend.textContent !== '0'){
+        secondOperend.textContent = buttonContent;
+        secondNum = Number(buttonContent);
+        return secondNum
+      } else if (firstOperend.textContent === '0'){
+        firstOperend.textContent = buttonContent;
+        firstNum = Number(buttonContent);
+        return firstNum
+      }
     }
 
     if (action === 'operator') {
+      operator.textContent = buttonContent;
       console.log('연산자 ' + buttonContent + ' 버튼');
     }
 
@@ -40,10 +59,16 @@ buttons.addEventListener('click', function (event) {
 
     if (action === 'clear') {
       console.log('초기화 버튼');
+      firstOperend.textContent = '0';
+      secondOperend.textContent = '0';
+      operator.textContent = '+';
+      calculatedResult.textContent = 0;
     }
 
     if (action === 'calculate') {
-      console.log('계산 버튼');
+      let result = calculate(firstOperend.textContent, operator.textContent,secondOperend.textContent);
+      calculatedResult.textContent = result;
+      // console.log('계산 버튼'); // enter 버튼
     }
   }
 });
